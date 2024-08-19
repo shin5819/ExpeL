@@ -74,7 +74,7 @@ Python version : 3.9.17
 conda create -n expel python=3.9.17
 conda activate expel
 
-git clone https://github.com/LeapLabTHU/ExpeL.git expel
+git clone https://github.com/shin5819/ExpeL.git expel
 cd expel
 
 pip install -r requirements.txt

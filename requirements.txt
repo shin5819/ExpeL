@@ -15,3 +15,4 @@ einops==0.6.1
 sentence_transformers
 matplotlib
 # gdown # for downloading files from google drive (webshop)
+faiss-cpu
