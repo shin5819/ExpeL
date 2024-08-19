@@ -209,13 +209,13 @@ def save_trajectories_log(path: str, log: str = None, dicts: list = None, true_l
         run_name: The name of the run.
     """
     if save_log:
-        with open(f'{path}/{run_name}.txt', 'w') as f:
+        with open(f'{path}/{run_name}.txt', 'w', encoding='UTF-8') as f:
             f.write(log)
     if save_dict:
         with open(f'{path}/{run_name}.pkl', 'wb') as f:
             pickle.dump(dicts, f)
     if save_true_log:
-        with open(f'{path}/{run_name}_true.txt', 'w') as f:
+        with open(f'{path}/{run_name}_true.txt', 'w', encoding='UTF-8') as f:
             f.write(true_log)
 
 def load_trajectories_log(path: str, load_log: bool = True, load_dict: bool = True, load_true_log: bool = False, run_name: str = 'run') -> Dict[str, Any]:
