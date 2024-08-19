@@ -179,7 +179,7 @@ class ReactAgent(BaseAgent):
         )
         self.prompt_history = self.collapse_prompts(self.prompt_history)
         self.log_idx = len(self.prompt_history)
-        self.insert_before_task_prompt()
+        self.insert_before_task_prompt()  # ここでinsights_extractionで抽出したruleをプロンプトに挿入
 
         self.prompt_history.append(human_task_message_prompt.format_messages(task=self.remove_task_suffix(self.task))[0])
         self.insert_after_task_prompt()

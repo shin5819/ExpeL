@@ -24,6 +24,7 @@ INIT_TASKS_FN = dict(
         },
         'env_name': 'hotpotqa',
     } for _, row in joblib.load(cfg.benchmark.task_file).reset_index(drop=True).iterrows()],
+    # } for _, row in joblib.load(cfg.benchmark.task_file).reset_index(drop=True)[:10].iterrows()],  # Pick only 10 tasks for hotpotqa
     # 100 tasks for fever
     fever=lambda cfg: [{
         'task': cfg.benchmark.task_prefix + FeverEnv(idx).reset().replace('Claim: ', ''),

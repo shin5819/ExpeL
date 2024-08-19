@@ -98,7 +98,7 @@ The installation instructions are shown below. Use the previously created enviro
 You will also need to download the data at the specified location: ``data/alfworld``.
 ```Bash
 conda activate expel
-pip install alfworld[full]
+pip install 'alfworld[full]'
 
 export ALFWORLD_DATA="data/alfworld"
 alfworld-download

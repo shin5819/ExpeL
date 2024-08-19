@@ -1,3 +1,7 @@
+/data/alfworld/json_*
+/data/alfworld/detectors
+/data/alfworld/logic
+
 logs/
 # Byte-compiled / optimized / DLL files
 __pycache__/
